@@ -1,0 +1,34 @@
+PROGRAM SCRIS IN PYCHARM
+*trebuie instalat --> pip3 install pycryptodome
+
+
+1 Se porneste serverul KM  ( python KeyManager.py )  
+
+2 Se porneste client A  ( python A.py )
+
+3 Se porneste client B  ( python B.py )
+
+4 A ii transmite lui KM modul de ( CBC/CFB ) dorit.
+
+5 KM le transmite lui A si B doua mesaje identice cu cheia K respectiva si IV ul, acestea fiind criptate cu cheia K3, pe care toti 3 o au, acestia urmand sa decripteze.
+
+6 A si B raspund cu un mesaj de confirmare criptat in modul ales.
+
+7 KM decripteaza mesajele si le transmite un mesaj de inceput al comunicatiei catre cele doua noduri A si B
+
+8 Nod B deschide un server pt A
+
+9 A se conecteaza la B
+
+10 A se foloseste de fisierul "secret.txt" pentru a cripta
+
+11 A ii trimite lui B fisierul criptat corespunzator iar lui KM nr de blocuri
+
+12 B decripteaza ce a primit de la A , afiseaza mesajul decriptat si ii trimite lui KM numarul de blocuri criptate
+
+13 KM compara numarul de blocuri de la A si B si afiseaza daca sunt egale
+
+14 KM afiseaza si daca fisierul initial coincide cu cel decriptat final
+
+15 Program complet functional!
+
